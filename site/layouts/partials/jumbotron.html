@@ -2,9 +2,11 @@
       <div class="container d-lg-flex align-items-lg-center flex-lg-wrap height-lg-100vh text-center space-top-2 space-top-md-4 space-top-lg-3">
         <div class="w-100 mx-auto mb-9 mb-lg-0">
           <div class="mb-5">
-            <h1 class="display-4 font-size-md-down-5 font-weight-semi-bold">Build a better business</h1>
-            <p>Front is the leading online template helping <strong class="text-primary">1000+</strong> customers.</p>
-          </div>
+            <h1 class="display-4 font-size-md-down-5 font-weight-semi-bold"> {{.title}}</h1>
+                 {{ if .subtitle }}
+            <p>  {{.subtitle}}</p>
+                 {{ end }}          
+              </div>
 
           <!-- Form -->
           <form class="js-validate w-md-75 w-lg-50 w-xl-40 mx-md-auto mb-4">
@@ -26,7 +28,7 @@
 
           <div class="small">
             <span class="font-weight-medium">View a demo:</span>
-            <a class="link-muted mx-2" href="index.html">Explore live demo</a>
+            <a class="link-muted mx-2" href="/">Explore live demo</a>
 
             <!-- Fancybox -->
             <a class="js-fancybox link-muted" href="javascript:;"
